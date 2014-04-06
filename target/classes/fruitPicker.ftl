@@ -1,0 +1,16 @@
+<html>
+<head>
+	<title> Fruit Picker!</title>
+</head>
+<body>
+	<form action="/favorite_fruit" method="POST">
+		<P>What is your favorite fruit?</P>
+		<#list fruits as fruit>
+			<P>
+				<input type="radio" name="fruit" value="${fruit}">${fruit}</input>
+			</p>
+		</#list>
+		<input type="submit" value="Submit"/>
+	</form>
+</body>
+</html>
